@@ -25,5 +25,28 @@ a {
     // padding-right: 15px;
     margin: 0 auto;
     padding: 0 15px;
-    width: 1140px;
+    max-width: 1140px;
+
+    &--sm {
+        max-width: 840px;
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.none {
+    display: none !important;
+}
+
+.title-2 {
+    font-family: $font-accent;
+    color: $color-font-accent;
+    font-size: 36px;
+    font-weight: 700;
 }
