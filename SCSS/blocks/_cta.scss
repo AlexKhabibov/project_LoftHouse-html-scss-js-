@@ -1,11 +1,15 @@
 .cta {
     padding: 180px 0;
 
-    background: linear-gradient(180.00deg,
-            rgb(36, 43, 51) 11.979%,
-            rgba(45, 52, 60, 0.38) 51.042%,
-            rgb(36, 43, 51) 92.188%),
-        url(./../img/cta_bg.jpeg);
+    background: 
+            linear-gradient(180.00deg,
+            $color-dark 11.979%,
+            rgba(45, 52, 60, 0) 51.042%,
+            $color-dark 92.188%),
+
+            linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+
+            url(./../img/cta_bg.jpeg), #c4c4c4;
 
 }
 
@@ -13,10 +17,22 @@
     margin-bottom: 17px;
 }
 
-.title-2 {}
+.cta__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
 
-.cta__wrapper {}
+.cta__text {
+    line-height: 1.5;
 
-.cta__text {}
+    p + p {
+        margin-top: 1em;
+    }
+}
 
-.cta__form {}
+.cta__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 30px;
+}
