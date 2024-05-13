@@ -1,7 +1,7 @@
 .info {
     font-size: 18px;
     position: relative;
-    
+
 
     &--map::before,  &--tel::before {
         content: "";
@@ -25,5 +25,13 @@
 
     &--tel::before {
         background-image: url(/img/phone.svg);
+    }
+
+    @include mediaTablet {
+        font-size: 14px;
+
+        &--map, &--tel {
+            padding-left: 25px;
+        }
     }
 }
