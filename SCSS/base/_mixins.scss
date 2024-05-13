@@ -6,3 +6,9 @@
     font-family: $font-accent;
     z-index: -1;
 }
+
+@mixin mediaTablet {
+    @media screen and (max-width: $media_tablet) {
+        @content;
+    }
+}

@@ -20,6 +20,20 @@
     align-items: center;
 }
 
+.header__nav {
+        @include mediaTablet {
+        display: none;
+    }   
+}
+
+.header__nav-btn {
+    display: none;
+
+    @include mediaTablet {
+        display: block;
+    }
+}
+
 .header__title {
     text-align: center;
     font-size: 48px;
