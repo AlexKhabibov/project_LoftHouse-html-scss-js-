@@ -3,16 +3,13 @@
     position: relative;
 
     &::after {
-        position: absolute;
-        top: 0;
         left: calc(50% + 555px);
         transform: translate(-50%, 0%);
 
         content: "II";
-        opacity: 0.02;
-        font-size: 400px;
-        font-family: $font-accent;
         line-height: 1.2;
+
+        @include decorNumbers;
     }
 }
 

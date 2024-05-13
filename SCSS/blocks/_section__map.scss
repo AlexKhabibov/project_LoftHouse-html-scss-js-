@@ -3,17 +3,14 @@
     position: relative;
 
     &::before {
-        position: absolute;
-        top: 160px;
         right: calc(50% + 555px);
         transform: translate(50%, 0%);
-        z-index: -1;
 
         content: "V";
-        opacity: 0.02;
-        font-size: 400px;
-        font-family: $font-accent;
         line-height: 1.2;
+
+        @include decorNumbers;
+        top: 160px;
     }
 }
 
