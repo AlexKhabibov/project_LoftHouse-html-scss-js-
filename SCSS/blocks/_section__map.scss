@@ -12,10 +12,19 @@
         @include decorNumbers;
         top: 160px;
     }
+
+    @include mediaTablet {
+        padding: 90px 0px;
+    }
 }
+
 
 .section__map__title {
     margin-bottom: 88px;
+
+    @include mediaTablet {
+    margin-bottom: 44px;
+    }
 }
 
 .section__map__map {
